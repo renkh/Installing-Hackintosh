@@ -41,8 +41,7 @@ diskutil eraseDisk JHFS+ USB /dev/disk3
 Check your motherboard manufacturer for recommended BIOS settings for hackintosh. Googling your motherboard name BIOS and hackintosh should bring up a list of things you should do before installing macOS High Sierra. My motherboard *ASROCK PRO4* didn't require any changes to its BIOS. However I strongly recommend to change boot order to boot into USB first.
 
 ## Install macOS High Sierra
-1. Best thing is to install High Sierra on a fresh SSD. If you're partitioning your SSD there may be other steps for you to perform to get your SSD partitioned.
-1. Prepare your computer by unplugging unneeded HDDs and SDDs, leaving your one and only SDD. You can plug them back in after installation.
+Best thing is to install High Sierra on a fresh SSD. If you're partitioning your SSD there may be other steps for you to perform to get your SSD partitioned. Prepare your computer by unplugging unneeded HDDs and SDDs, leaving your one and only SDD. You can plug them back in after installation.
 1. Turn on the computer while repeatedly pressing boot device hotkey on the keyboard. F12 for Gigabyte motherboards, F8 for ASUS motherboards, F11 for ASrock motherboards.
 2. Choose USB drive you created.
 3. If Clover screen doesn't appear, or the computer loads your operating system, restart, repeat steps 3. and 4 and choose a different selection.
