@@ -1,7 +1,6 @@
-// installation instructions for macOS on PC the proper way
-// primarily avoids the problem of updates breaking your configuration
-// based of [tonymacx86](https://www.tonymacx86.com/)
-// updated on 12/22/2017
+installation instructions for macOS on PC the proper way primarily avoids the problem of updates breaking your configuration
+based of [tonymacx86](https://www.tonymacx86.com/)
+updated on 12/22/2017
 # Installation
 ## Before you begin
 1. Start downloading macOS High Sierra from App Store on macOS computer
