@@ -122,4 +122,5 @@ Setting up iMessage is quick an easy, all you have to do is add a serial number 
 8. Restart your Hackintosh
 9. You should have working iMessage, try signing in and sending a message.
 
-###
+### Installing NVIDIA Graphics Drivers
+Installing graphics driver for your NVIDIA card is easy. [Download](https://www.tonymacx86.com/nvidia-drivers/) appropriate version based on your OS Build. Once the download has finished, click and run the installer. If the installer says *"Mac OS X version is not compatible"* go back to the **Download** page and try a different version. Typically the latest macOS build will work with the latest NVIDIA driver version.
