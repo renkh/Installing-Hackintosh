@@ -2,13 +2,13 @@
 // primarily avoids the problem of updates breaking your configuration
 // based of [tonymacx86](https://www.tonymacx86.com/)
 // updated on 12/22/2017
-#Installation
-##Before you begin
+# Installation
+## Before you begin
 1. Start downloading macOS High Sierra from App Store on macOS computer
 2. You need to have an account at [tonymacx86](https://www.tonymacx86.com/) to be able to download 2 programs needed for this guide.
 3. Have a USB drive ready, for formatting information see **Formatting** subsection.
 
-##Formatting
+## Formatting
 Sure fire way to format USB without running into problems is to use *diskutil* command in Terminal
 1. Open terminal.app on macOS
 2. Type `diskutil list`
@@ -25,7 +25,7 @@ diskutil unmountDisk /dev/disk3
 diskutil eraseDisk JHFS+ USB /dev/disk3
 ```
 
-##Create a Bootable USB drive with UniBeast
+## Create a Bootable USB drive with UniBeast
 1. Insert newly formatted USB drive into computer
 2. Download and run [Unibeast 8.1.0](https://www.tonymacx86.com/resources/categories/tonymacx86-downloads.3/)
 3. At *Select a Destination* choose your **USB drive**
@@ -37,10 +37,10 @@ diskutil eraseDisk JHFS+ USB /dev/disk3
 9. Download [Clover EFI bootloader](https://sourceforge.net/projects/cloverefiboot/)
 9. Once Unibeast finished intalling, drag **Multibeast** and **Clover EFI bootloader** into *Install macOS High Sierra* partition on USB.
 
-##Recommended BIOS Settings
+## Recommended BIOS Settings
 Check your motherboard manufacturer for recommended BIOS settings for hackintosh. Googling your motherboard name BIOS and hackintosh should bring up a list of things you should do before installing macOS High Sierra. My motherboard *ASROCK PRO4* didn't require any changes to its BIOS. However I strongly recommend to change boot order to boot into USB first.
 
-##Install macOS High Sierra
+## Install macOS High Sierra
 1. Best thing is to install High Sierra on a fresh SSD. If you're partitioning your SSD there may be other steps for you to perform to get your SSD partitioned.
 1. Prepare your computer by unplugging unneeded HDDs and SDDs, leaving your one and only SDD. You can plug them back in after installation.
 1. Turn on the computer while repeatedly pressing boot device hotkey on the keyboard. F12 for Gigabyte motherboards, F8 for ASUS motherboards, F11 for ASrock motherboards.
@@ -52,17 +52,17 @@ Check your motherboard manufacturer for recommended BIOS settings for hackintosh
 7. Once you've formatted SSD, close out of the terminal window to return to Utilities Screen.
 8. Click on Install macOS High Sierra, follow instructions to complete installation. The installation should take a little while with multiple reboots.
 
-##Post Installation
+## Post Installation
 Once you completed installation you have to install some kexts. Kexts are something like drivers, they let your hardware work with macOS software. **Do not use Multibeast** to install kexts. Multibeast installed kexts often break and do not survive updates. On top of that, it becomes hard to update kexts, remove unwanted kexts and troubleshoot if something breaks.
 
-###Install Clover UEFI
+### Install Clover UEFI
 First thing you want to do is install Clover UEFI into your macOS installation. It is easily done with Multibeast.
 1. Open up Finder and navigate to your USB drive.
 2. Open and run *Multibeast*.
 3. Click on *Bootloaders* icon.
 4. Select *Clover UEFI Boot Mode*, click on Build and click on Install.
 
-###Download kexts
+### Download kexts
 Now for kexts, these are kexts that I had to download for my motherboard ASROCK PRO4. The first 4 kexts are required for all systems and you should download them too.
 1. Download [FakeSMC.kext](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/), choose *RehabMan-FakeSMC-2017-1017.zip*. This allows your computer to boot a hackintosh.
 2. Download [Lilu.kext](https://github.com/vit9696/Lilu/releases), choose *1.2.1.DEBUG.zip*. This is required for audio to work.
@@ -87,7 +87,7 @@ Everytime your computer boots, it'll check for existing kexts and automatically 
 ```
 Modify `<string>Detect</string>` to `<string>Yes</string>`, save and close the window. Now Clover will always inject kexts.
 
-###Setting up audio
+### Setting up audio
 To get audio to work follow these steps:
 1. Open config.plist using Clover Configurator
 2. Click Apci
@@ -111,7 +111,7 @@ To get audio to work follow these steps:
 12. Select *Internal Speakers*
 13. Check if sound is working, if not, make sure **Lilu.kext** and **AppleALC.kext** are in the proper directory, refer to **Adding kexts to Clover** susection. Try changing audio ID to a different number in **Setting up audio** step 6.
 
-###Setting up iMessage
+### Setting up iMessage
 Setting up iMessage is quick an easy, all you have to do is add a serial number that your system can be identified as. To do so:
 1. Open config.plist using Clover Configurator
 2. Navigate to the SMBIOS settings.
