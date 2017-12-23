@@ -44,7 +44,7 @@ Check your motherboard manufacturer for recommended BIOS settings for hackintosh
 Best thing is to install High Sierra on a fresh SSD. If you're partitioning your SSD there may be other steps for you to perform to get your SSD partitioned. Prepare your computer by unplugging unneeded HDDs and SDDs, leaving your one and only SDD. You can plug them back in after installation.
 1. Turn on the computer while repeatedly pressing boot device hotkey on the keyboard. F12 for Gigabyte motherboards, F8 for ASUS motherboards, F11 for ASrock motherboards.
 2. Choose USB drive you created.
-3. If Clover screen doesn't appear, or the computer loads your operating system, restart, repeat steps 3. and 4 and choose a different selection.
+3. If Clover screen doesn't appear, or the computer loads your operating system, restart, repeat steps 1 and 2 and choose a different selection.
 4. At Clover sceen choose **Boot OS X Install from Install macOS High Sierra**. The computer will boot into macOS recovery.
 5. At Utilities Screen, top left menu bar select *Utilities* and click on *Terminal*
 6. You need to format your SSD, to do so see **Formatting** subsection. This time you're formatting your SSD not USB drive.
