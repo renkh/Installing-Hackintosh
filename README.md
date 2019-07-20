@@ -96,12 +96,14 @@ To get audio to work follow these steps:
 4. Next click Devices on the left column
 5. Under Audio column, check ResetHDA checkbox
 6. Under Audio column, type in the audio ID number based on what audio codec your motherboard is using you will need to experiment with different numbers if the one is bold doesn’t work for you. My motherboard requires **ALC887**, in the inject box I type **7**.
-| Audio Codec | Audio ID
+```
+Audio Codec | Audio ID
 ALC1220 | Inject = **11**, 1, 2, 5, 7
 S1220A | Inject = **7**, 1, 2, 5
 ALC1150 | Inject = **1**, 2, 3, 5, 7, 11
 ALC892 | Inject = **1**,  2, 3, (4 for laptop), 5, 7, 28, 92, 99
 ALC887 | Inject = **7**, 1, 2, 3, 5, 11, 13, 17, 18, 33, 99
+```
 7. Save and close config.plist file
 8. Restart Hackintosh
 9. After restart, open *System Preferences*
