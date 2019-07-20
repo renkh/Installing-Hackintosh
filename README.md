@@ -1,9 +1,9 @@
-installation instructions for macOS on PC the proper way primarily avoids the problem of updates breaking your configuration
+installation instructions for macOS High Sierra on PC.
 based of [tonymacx86](https://www.tonymacx86.com/)
-updated on 12/22/2017
+updated on 07/20/2019
 # Installation
 ## Before you begin
-1. Start downloading macOS High Sierra from App Store on macOS computer
+1. Start downloading macOS [High Sierra](https://itunes.apple.com/us/app/macos-high-sierra/id1246284741?ls=1&mt=12) from App Store on macOS computer. To follow the link you might need to open it in Safari and have it redirect to Mac App Store.
 2. You need to have an account at [tonymacx86](https://www.tonymacx86.com/) to be able to download 2 programs needed for this guide.
 3. Have a USB drive ready, for formatting information see **Formatting** subsection.
 
@@ -68,7 +68,7 @@ Now for kexts, these are kexts that I had to download for my motherboard ASROCK 
 4. Download [AppleALC.kext](https://github.com/vit9696/AppleALC/releases), choose *1.2.1.DEBUG.12.11.17.zip*. This allows audio to work.
 5. Download ethernet kext. You need to find out what chipset your motherboard requires. For example, motherboards using an Intel Ethernet Chipset, download [IntelMausiEthernet.kext](https://bitbucket.org/RehabMan/os-x-intel-network/downloads/), choose *RehabMan-IntelMausiEthernet-v2-2017-0914.zip*.
 
-###Adding kexts to Clover
+### Adding kexts to Clover
 Everytime your computer boots, it'll check for existing kexts and automatically inject them into the system. To add kexts to Clover:
 1. Open Finder and navigate to your USB
 2. Open Clover Configurator
