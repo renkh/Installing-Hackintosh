@@ -8,7 +8,7 @@ updated on 07/20/2019
 3. Have a USB drive ready, for formatting information see **Formatting** subsection.
 
 ## Formatting
-Sure fire way to format USB without running into problems is to use *diskutil* command in Terminal
+Create a GUID formatted flash drive using *diskutil* command in Terminal
 1. Open terminal.app on macOS
 2. Type `diskutil list`
 3. Search for your USB drive number listed as disk, easy hint is to match the size of your USB card to the listed disks.
